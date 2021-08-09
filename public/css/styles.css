@@ -722,7 +722,7 @@ a:hover, a:active {
   width: 78%;
 }
 .feature .feature-box .feature-content h4 {
-  color: #000988;
+  color: #007f88;
   font-size: 25px;
   letter-spacing: 0;
   line-height: 32px;
@@ -749,10 +749,10 @@ a:hover, a:active {
 
 
 .mis-vis-container {
-  background-color: rgb(222, 214, 255);
+  background-color: rgb(214, 250, 255);
   padding: 30px;
   border-radius: 5%;
-  border: 3px solid rgb(39, 39, 172);
+  border: 3px solid rgb(39, 168, 172);
 }
 
 
@@ -802,4 +802,53 @@ input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
 	background: #109177;
+}
+
+/* text styles join page*/
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.head-text-join {
+  color: rgb(0, 0, 0);
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 70px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.head-text-join:before,
+.head-text-join:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.head-text-join:before {
+  border-color: #4ad962 #4ad962 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.head-text-join:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #4a77d9 #4a77d9;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
