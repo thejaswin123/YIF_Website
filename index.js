@@ -29,6 +29,10 @@ app.get('/events', (req, res) => {
     res.render('mains/events');
 })
 
+app.get('/about', (req, res) => {
+    res.render('mains/about');
+})
+
 const port = 8080;
 app.listen(port, () => {
     console.log(`serving on port ${port}`);
