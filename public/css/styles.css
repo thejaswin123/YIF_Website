@@ -8,6 +8,9 @@
   background-repeat: no-repeat;
   background-size:cover;
   opacity:0.8;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 0 100px orange;
 }
 
 .title-text{
@@ -15,7 +18,7 @@
   font-weight: 900;
   text-transform: uppercase;
 	background: linear-gradient(#09bd03 0%, #ff7e06 100%);
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(82, 252, 223), 0 0 5px rgb(82, 252, 223);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(240, 157, 4), 0 0 5px rgb(253, 191, 19);
   background-clip: border-box;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -217,7 +220,7 @@ background-color: #ffe8bd;
   font-weight: 900;
   text-transform: uppercase;
 	/* background: linear-gradient(#09bd03 0%, #ff7e06 100%); */
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(82, 252, 223), 0 0 5px rgb(82, 252, 223);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(240, 157, 4), 0 0 5px rgb(253, 191, 19);
   background-clip: border-box;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -297,7 +300,7 @@ background-color: #ffe8bd;
 }
 .founder__container{
 padding:30px 0;
- background-color: #ceffe8;
+ background-color: #ffe8bd;
 }
 }
 @media (min-width:1024px){
@@ -306,7 +309,7 @@ padding:30px 0;
     font-weight: 900;
     text-transform: uppercase;
     /* background: linear-gradient(#09bd03 0%, #ff7e06 100%); */
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(82, 252, 223), 0 0 5px rgb(82, 252, 223);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(240, 157, 4), 0 0 5px rgb(253, 191, 19);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -807,7 +810,7 @@ input[type="submit"]:hover,
 /* text styles join page*/
 
 @keyframes tipsy {
-  0 {
+  0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
   100% {
